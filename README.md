@@ -8,9 +8,8 @@ repository's [releases](../../releases); the repository itself holds only this p
 - **What it is:** [ivrit-ai/whisper-large-v3-turbo](https://huggingface.co/ivrit-ai/whisper-large-v3-turbo), a
   Whisper large-v3-turbo model fine-tuned for Hebrew by [ivrit.ai](https://www.ivrit.ai), converted to the
   [MLX](https://github.com/ml-explore/mlx) format so it runs on Apple silicon with `mlx-whisper`.
-- **What was changed:** only the file format. The weights were converted with the `convert.py` script of
-  [mlx-examples/whisper](https://github.com/ml-explore/mlx-examples/tree/main/whisper); nothing was trained or
-  tuned here.
+- **What was changed:** only the file format (the weights are stored as MLX `safetensors`); nothing was trained
+  or tuned here.
 - **Files:** `ivrit-turbo-mlx.config.json` and `ivrit-turbo-mlx.weights.safetensors`. Saved as `config.json`
   and `weights.safetensors` in one folder, they are a model folder `mlx-whisper` loads.
 
